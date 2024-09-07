@@ -92,7 +92,6 @@ export const OptimumProject = () => {
   ];
 
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const prevSlide = () => {
     setCurrentSlideIndex(
@@ -102,15 +101,6 @@ export const OptimumProject = () => {
 
   const nextSlide = () => {
     setCurrentSlideIndex((currentSlideIndex + 1) % slides.length);
-  };
-
-  const openModal = (index) => {
-    setCurrentSlideIndex(index);
-    setIsModalOpen(true);
-  };
-  
-  const closeModal = () => {
-    setIsModalOpen(false);
   };
 
   return (
