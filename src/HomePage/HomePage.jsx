@@ -51,7 +51,7 @@ export const HomePage = () => {
 
         <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden mb-4">
           <img
-            src="./src/assets/homeLogos/profileImage.jpeg"
+            src="./assets/homeLogos/profileImage.jpeg"
             alt="Profile"
             className="w-full h-full object-cover"
           />
@@ -77,7 +77,7 @@ export const HomePage = () => {
             className="w-6 h-6 sm:w-8 sm:h-8 hover:w-10 hover:h-10 transition-all duration-400 ease-in-out"
           >
             <img
-              src="./src/assets/homeLogos/linkedin.svg"
+              src="./assets/homeLogos/linkedin.svg"
               alt="LinkedIn"
               className="w-full h-full object-fit"
             />
@@ -89,7 +89,7 @@ export const HomePage = () => {
             className="w-6 h-6 sm:w-8 sm:h-8 hover:w-10 hover:h-10 transition-all duration-400 ease-in-out"
           >
             <img
-              src="./src/assets/homeLogos/github.svg"
+              src="./assets/homeLogos/github.svg"
               alt="GitHub"
               className="w-full h-full object-cover"
             />
@@ -99,7 +99,7 @@ export const HomePage = () => {
             className="w-6 h-6 sm:w-8 sm:h-8 hover:w-10 hover:h-10 transition-all duration-400 ease-in-out"
           >
             <img
-              src="./src/assets/homeLogos/email.svg"
+              src="./assets/homeLogos/email.svg"
               alt="Email"
               className="w-full h-full object-cover"
             />
@@ -111,7 +111,7 @@ export const HomePage = () => {
             className="w-6 h-6 sm:w-8 sm:h-8 hover:w-10 hover:h-10 transition-all duration-400 ease-in-out"
           >
             <img
-              src="./src/assets/homeLogos/resume.svg"
+              src="./assets/homeLogos/resume.svg"
               alt="My Resume"
               className="w-full h-full object-cover"
             />
@@ -144,56 +144,56 @@ export const HomePage = () => {
           <div className="flex flex-wrap space-x-2 mt-4">
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/JS.svg"
+                src="./assets/projectImages/tools/JS.svg"
                 alt="JavaScript"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/React.svg"
+                src="./assets/projectImages/tools/React.svg"
                 alt="React"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/PyDjan.svg"
+                src="./assets/projectImages/tools/PyDjan.svg"
                 alt="Python & Django"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/Tail.svg"
+                src="./assets/projectImages/tools/Tail.svg"
                 alt="Tailwind CSS"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/SQL.svg"
+                src="./assets/projectImages/tools/SQL.svg"
                 alt="SQLite3"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/VS.svg"
+                src="./assets/projectImages/tools/VS.svg"
                 alt="VS Code"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/post.svg"
+                src="./assets/projectImages/tools/post.svg"
                 alt="Postman"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/Figma.svg"
+                src="./assets/projectImages/tools/Figma.svg"
                 alt="Figma"
                 className="w-full h-full object-cover"
               />
@@ -231,70 +231,70 @@ export const HomePage = () => {
           <div className="flex flex-wrap space-x-2 mt-4">
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/JS.svg"
+                src="./assets/projectImages/tools/JS.svg"
                 alt="JavaScript"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/React.svg"
+                src="./assets/projectImages/tools/React.svg"
                 alt="React"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/PyDjan.svg"
+                src="./assets/projectImages/tools/PyDjan.svg"
                 alt="Python & Django"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/AWS.svg"
+                src="./assets/projectImages/tools/AWS.svg"
                 alt="Amazon Web Service(AWS)"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/TSQ.svg"
+                src="./assets/projectImages/tools/TSQ.svg"
                 alt="TanStack Query"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/Tail.svg"
+                src="./assets/projectImages/tools/Tail.svg"
                 alt="Tailwind CSS"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/SQL.svg"
+                src="./assets/projectImages/tools/SQL.svg"
                 alt="SQL"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/VS.svg"
+                src="./assets/projectImages/tools/VS.svg"
                 alt="VS Code"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/post.svg"
+                src="./assets/projectImages/tools/post.svg"
                 alt="Postman"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="w-16 h-16 sm:w-20 sm:h-20">
               <img
-                src="./src/assets/projectImages/tools/Figma.svg"
+                src="./assets/projectImages/tools/Figma.svg"
                 alt="Figma"
                 className="w-full h-full object-cover"
               />

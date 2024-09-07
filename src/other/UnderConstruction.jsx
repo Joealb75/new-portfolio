@@ -3,7 +3,7 @@ export const UnderConstruction = () => {
     <div className="h-screen bg-gray-900 flex flex-col items-center justify-center">
       <div className="w-80 h-80 ">
         <img
-          src="./src/assets/projectImages/merito-project/Merito-Logo-V1.svg"
+          src="./assets/projectImages/merito-project/Merito-Logo-V1.svg"
           alt="Merito.dev"
           className="w-full h-full object-cover"
         />
