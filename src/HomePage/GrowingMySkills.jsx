@@ -5,7 +5,7 @@ export const GrowingMySkills = () =>{
       <div className="w-7/12">
           <h1 className="text-white text-3xl font-poppins font-semibold mb-4 leading-tight">Growing My Skill In . . .</h1>
           <p className="text-white text-md">
-              The languages, frameworks and tools displayed here represent the core of my current skill set that I am eager to utilize and expand on in within a growing organization that values collaboration and continuous learning.   
+              The languages, frameworks and tools displayed here represent the core of my current skill set that I am eager to utilize and expand on within a growing organization that values collaboration and continuous learning.   
           </p>
       </div>
 
