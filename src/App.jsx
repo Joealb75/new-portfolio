@@ -3,7 +3,7 @@ import { HomePage } from "./HomePage/HomePage.jsx";
 import { OptimumProject } from "./Projects/OptimumProject.jsx";
 import { BasicNavbar } from "./other/BasicNav.jsx";
 // import { MeritoProject } from "./Projects/MeritoProject.jsx";
-import { UnderConstruction } from "./other/underConstruction.jsx";
+import { UnderConstruction } from "./other/UnderConstruction.jsx";
 
 export const App = () => {
 
