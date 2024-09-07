@@ -3,89 +3,89 @@ import { useState } from "react";
 export const OptimumProject = () => {
   const slides = [
     {
-      image: "./src/assets/projectImages/optimum-project/1-Home1.svg",
+      image: "./assets/projectImages/optimum-project/1-Home1.svg",
       caption:
         "This is the websites 'Home Page', on the right is a slide show of images from the business, I coordinated with my friend and business owner for the photoshoot. Underneath that are cards for each of the providers with a button that takes you to their 'About Me' page.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/2-Home2.svg",
+      image: "./assets/projectImages/optimum-project/2-Home2.svg",
       caption:
         "This is the 2nd part of the 'Home Page', shows the latest article posted and business contact details.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/3-AboutUs1.svg",
+      image: "./assets/projectImages/optimum-project/3-AboutUs1.svg",
       caption: "This is the 'About' section for the business.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/4-AboutUs2.svg",
+      image: "./assets/projectImages/optimum-project/4-AboutUs2.svg",
       caption: "This is the 2nd part of the 'About' section.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/5-AboutMe.svg",
+      image: "./assets/projectImages/optimum-project/5-AboutMe.svg",
       caption:
         "This is the 'About Me' section that is created for every provider, it is sourced from their profile that the provider can edit at any time.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/6-PrimaryCare1.svg",
+      image: "./assets/projectImages/optimum-project/6-PrimaryCare1.svg",
       caption: "This is their 'Primary Care' service page.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/7-PrimaryCare2.svg",
+      image: "./assets/projectImages/optimum-project/7-PrimaryCare2.svg",
       caption:
         "This is the 2nd part of the 'Primary Care' page with a slide show of customer reviews.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/8-ArticlesHome.svg",
+      image: "./assets/projectImages/optimum-project/8-ArticlesHome.svg",
       caption:
         "This is the 'Articles Home' page where the user can filter articles by their tags. Newest articles display at the top of the list.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/9-ViewArticle.svg",
+      image: "./assets/projectImages/optimum-project/9-ViewArticle.svg",
       caption:
         "Here you are viewing an article, the card under the image is also a link that will take the user to the writers 'About Me' page.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/10-Dash1.svg",
+      image: "./assets/projectImages/optimum-project/10-Dash1.svg",
       caption:
         "This is the 'Admin Dashboard', (Non-admin providers can only see the consultations they are assigned to, they also have various other restrictions) the admin can see all consultations and at a quick glance see the status of the other providers consultations.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/11-Dash2.svg",
+      image: "./assets/projectImages/optimum-project/11-Dash2.svg",
       caption:
         "This is the 2nd part of the 'Admin dashboard where they can view the latest / all articles. The admin is also able to create, edit and delete Article Tags as needed.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/12-UserConsult.svg",
+      image: "./assets/projectImages/optimum-project/12-UserConsult.svg",
       caption:
         "This is the modal that pops up when the admin clicks on 'View Consultations' for one of the providers.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/13-EditConsult1.svg",
+      image: "./assets/projectImages/optimum-project/13-EditConsult1.svg",
       caption:
         "This is the edit consultation view, Admins can change all information on it. Non-admins can only edit the Status and Provider Comment.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/14-EditConsult2.svg",
+      image: "./assets/projectImages/optimum-project/14-EditConsult2.svg",
       caption:
         "By default new consultations are assigned to the Admin. Only the Admin can change who the consultation is assigned to.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/15-EditProfile.svg",
+      image: "./assets/projectImages/optimum-project/15-EditProfile.svg",
       caption:
         "This is the Edit Profile component, it is the same for all users. I used the Quill rich text editor (in multiple places) but primarily for the bio section so the user could format the text however they would like.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/16-CreateArticle.svg",
+      image: "./assets/projectImages/optimum-project/16-CreateArticle.svg",
       caption:
         "This is the create new article component that also uses the Quill rich text editor. One important feature of this component is that when non-admins submit an article it is set to 'Not Approved' and will not be shown on the site until the admin changes the status. When an admin creates an article by default it is set to approved and will display on the site once submitted.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/17-LoFi-Wireframe.svg",
+      image: "./assets/projectImages/optimum-project/17-LoFi-Wireframe.svg",
       caption:
         "I used Figma to create a Lo-Fi wireframe to visualize the layout of the site.",
     },
     {
-      image: "./src/assets/projectImages/optimum-project/18-ERD.svg",
+      image: "./assets/projectImages/optimum-project/18-ERD.svg",
       caption:
         "I used dbdiagram.io to create the ERD for this project to visualize the structure of the database and how the different entities will relate to each other.",
     },
