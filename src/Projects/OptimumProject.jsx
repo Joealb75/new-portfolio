@@ -92,6 +92,7 @@ export const OptimumProject = () => {
   ];
 
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const prevSlide = () => {
     setCurrentSlideIndex(
@@ -103,9 +104,18 @@ export const OptimumProject = () => {
     setCurrentSlideIndex((currentSlideIndex + 1) % slides.length);
   };
 
+  const openModal = (index) => {
+    setCurrentSlideIndex(index);
+    setIsModalOpen(true);
+  };
+  
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <>
-      <div className="flex flex-col lg:flex-row h-screen bg-slate-900">
+      <div className="flex flex-col lg:flex-row min-h-screen bg-slate-900">
         <div className="w-full lg:w-1/3 flex flex-col justify-center px-8 py-6 lg:py-0">
           <h1 className="text-2xl lg:text-4xl font-bold text-white mb-4">
             Optimum Mens Health
@@ -233,19 +243,6 @@ export const OptimumProject = () => {
           </button>
         </div>
       </div>
-      <section className=" bg-slate-900">
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-        </section>
     </>
   );
 };
