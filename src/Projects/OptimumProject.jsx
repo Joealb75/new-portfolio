@@ -105,13 +105,40 @@ export const OptimumProject = () => {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row min-h-screen bg-slate-900">
-        <div className="w-full lg:w-1/3 flex flex-col justify-center px-8 py-6 lg:py-0">
+      <div className="flex flex-col items-center min-h-screen bg-slate-900">
+
+        <div className="relative w-full sm:w-3/4 lg:w-full h-72 lg:h-full">
+          <img
+            src={slides[currentSlideIndex].image}
+            alt={`Slide ${currentSlideIndex + 1}`}
+            className="w-full h-full object-cover rounded-lg"
+          />
+  
+          <button
+            className="absolute top-1/2 transform -translate-y-1/2 left-4 text-white text-xl font-bold bg-gray-800 px-4 py-2 rounded-md hover:bg-blue-600"
+            onClick={prevSlide}
+          >
+            &#8249;
+          </button>
+          <button
+            className="absolute top-1/2 transform -translate-y-1/2 right-4 text-white text-xl font-bold bg-gray-800 px-4 py-2 rounded-md hover:bg-blue-600"
+            onClick={nextSlide}
+          >
+            &#8250;
+          </button>
+        </div>
+  
+        <p className="text-white text-sm sm:text-md text-center w-2/3 mt-4 pl-4 pr-4">
+          {slides[currentSlideIndex].caption}
+        </p>
+        <hr className="border-t border-slate-500 my-4 w-2/3" />
+  
+        <div className="w-full sm:w-3/4 lg:w-2/3 flex flex-col items-left justify-left mt-6 pl-6">
           <h1 className="text-2xl lg:text-4xl font-bold text-white mb-4">
             Optimum Mens Health
           </h1>
-
-          <p className="text-sm lg:text-md text-white mb-6">
+  
+          <p className="text-sm lg:text-md text-white mb-6 text-left">
             Was built as my final capstone project for{" "}
             <a
               className="text-blue-400 hover:text-green-500"
@@ -176,63 +203,37 @@ export const OptimumProject = () => {
           </p>
 
           <a
-            href="https://www.linkedin.com/posts/joe--albrecht_it-feels-like-yesterday-i-was-signing-into-activity-7225520469536370690-YNw2?utm_source=share&utm_medium=member_desktop"
+          href="https://www.linkedin.com/posts/joe--albrecht_it-feels-like-yesterday-i-was-signing-into-activity-7225520469536370690-YNw2?utm_source=share&utm_medium=member_desktop"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-slate-800 text-sm text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 w-32 text-center mb-4"
+        >
+          Demo Video
+        </a>
+        <div className="mb-3">
+          <a
+            href="https://github.com/Joealb75/Optimum-Client"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-slate-800 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 w-32 text-center"
+            className="bg-slate-800 text-sm text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 w-36 text-center"
           >
-            Demo Video
+            View Front End Code
           </a>
-          <hr className="border-t border-slate-500 my-4" />
-          <div className="mb-3">
-            <a
-              href="https://github.com/Joealb75/Optimum-Client"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-slate-800 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 w-36 text-center"
-            >
-              View Front End Code
-            </a>
-          </div>
-          <div className="mt-3">
-            <a
-              href="https://github.com/Joealb75/Optimum-API"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-slate-800 text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 w-36 text-center"
-            >
-              View Back End Code
-            </a>
-          </div>
         </div>
-
-        <div className="w-full lg:w-2/3 flex flex-col items-center justify-center relative py-6 lg:py-0">
-          <div className="w-full sm:w-3/4 lg:w-3/4 h-56 sm:h-72 lg:h-3/4 mb-4">
-            <img
-              src={slides[currentSlideIndex].image}
-              alt={`Slide ${currentSlideIndex + 1}`}
-              className="w-full h-full object-cover rounded-lg"
-            />
-          </div>
-
-          <p className="text-white text-sm sm:text-md mb-4 text-center w-2/3">
-            {slides[currentSlideIndex].caption}
-          </p>
-
-          <button
-            className="absolute left-4 lg:left-0 text-white text-xl font-bold bg-gray-800 px-4 py-2 rounded-md hover:bg-blue-600 ml-4"
-            onClick={prevSlide}
+        <div className="mt-3">
+          <a
+            href="https://github.com/Joealb75/Optimum-API"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-slate-800 text-sm text-white font-semibold py-2 px-4 rounded-full hover:bg-blue-600 w-36 text-center"
           >
-            &#8249;
-          </button>
-          <button
-            className="absolute right-4 lg:right-0 text-white text-xl font-bold bg-gray-800 px-4 py-2 rounded-md hover:bg-blue-600 mr-4"
-            onClick={nextSlide}
-          >
-            &#8250;
-          </button>
+            View Back End Code
+          </a>
+        </div>
+        <hr className="border-t border-slate-500 my-4 w-full" />
         </div>
       </div>
     </>
   );
+  
 };
