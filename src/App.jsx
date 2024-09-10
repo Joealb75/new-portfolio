@@ -5,6 +5,7 @@ import { BasicNavbar } from "./other/BasicNav.jsx";
 // import { MeritoProject } from "./Projects/MeritoProject.jsx";
 import { UnderConstructionMerito } from "./other/UnderConstruction-merito.jsx";
 import { UnderConstructionBasic } from "./other/UnderConstruction-Basic.jsx";
+import { AboutMe } from "./AboutMe/AboutMe.jsx";
 
 export const App = () => {
 
@@ -17,7 +18,7 @@ export const App = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/optimum-project" element={<OptimumProject />} />
           <Route path="/under-construction" element={<UnderConstructionMerito />} />
-          <Route path="/about-me" element={<UnderConstructionBasic />} />
+          <Route path="/about-me" element={<AboutMe />} />
           
         </Routes>
       </div>
