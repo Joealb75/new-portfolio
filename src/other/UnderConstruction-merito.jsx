@@ -1,4 +1,4 @@
-export const UnderConstruction = () => {
+export const UnderConstructionMerito = () => {
   return (
     <div className="h-screen bg-gray-900 flex flex-col items-center justify-center">
       <div className="w-80 h-80 ">

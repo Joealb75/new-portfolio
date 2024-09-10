@@ -13,7 +13,6 @@ export const HomePage = () => {
     "Jr. Software Engineer",
     "Problem Solver",
     "Your Next Hire? ;)",
-    "Aspiring Smart Contract Developer",
   ];
 
   useEffect(() => {
