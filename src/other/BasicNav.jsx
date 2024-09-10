@@ -14,6 +14,12 @@ export const BasicNavbar = () => {
         >
           Projects
         </a>
+        <a
+          href="/about-me"
+          className="text-lg font-semibold hover:text-blue-400 transition duration-300 pl-3"
+        >
+          About Me
+        </a>
       </div>
     </nav>
   );
