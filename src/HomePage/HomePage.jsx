@@ -79,7 +79,7 @@ export const HomePage = () => {
           <AboutMe />
 
         {/* Projects Section */}
-        <div id="projects" className="mt-12 w-full max-w-3xl px-4">
+        <div id="projects" className="mt-6 w-full max-w-3xl px-4">
           <h1 className="text-2xl sm:text-3xl font-medium mb-4 text-white text-left">
             Projects
           </h1>

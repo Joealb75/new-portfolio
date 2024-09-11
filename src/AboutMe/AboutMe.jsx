@@ -2,10 +2,16 @@ export const AboutMe = () => {
   return (
     <>
       <div className="w-full md:w-7/12 pl-4 md:pl-5 pt-4" id="about">
-        <h1 className="text-2xl sm:text-3xl font-medium mb-4 text-white text-left">
+        <h1 className="text-2xl sm:text-3xl font-medium  text-white text-left">
           {" "}
           About Me
         </h1>
+
+        <p className="text-xs text-gray-400 pt-1">
+          <i className="fas fa-clock mr-2"></i>2
+          minute read
+        </p>
+        
         <hr className="border-t border-slate-500 my-4" />
         <p className="text-gray-400 text-sm">
           I plan and build full-stack applications using React(JS), Python,
@@ -73,8 +79,9 @@ export const AboutMe = () => {
           a skill, it was a passion. Each challenge pushed me to think
           critically, and every group project strengthened my ability to
           collaborate with others in meaningful ways. Completing NSS marked the
-          beginning of a new chapter in my life where I’m eager to keep learning new
-          technologies, adapting, and building solutions that make a difference.
+          beginning of a new chapter in my life where I’m eager to keep learning
+          new technologies, adapting, and building solutions that make a
+          difference.
         </p>
       </div>
     </>
