@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { GrowingMySkills } from "./GrowingMySkills.jsx";
 import { SocialLinks } from "./SocialLinks.jsx";
 import { OptimumHome } from "../project-components/Optimum-Home.jsx";
 import { MeritoHome } from "../project-components/Merito-Home.jsx";
+import { AboutMe } from "../AboutMe/AboutMe.jsx";
+import { NavBarHome } from "../other/NavBarHome.jsx";
 
 export const HomePage = () => {
   const [text, setText] = useState("");
@@ -13,9 +14,11 @@ export const HomePage = () => {
 
   const words = [
     "Full Stack Developer",
-    "Jr. Software Engineer",
     "Problem Solver",
+    "⇓ Connect with me on LinkedIn",
     "Your Next Hire? ;)",
+    "Jr. Software Engineer",
+    
   ];
 
   useEffect(() => {
@@ -49,6 +52,7 @@ export const HomePage = () => {
 
   return (
     <>
+    <NavBarHome/>
       <div className="flex flex-col items-center justify-center min-h-screen bg-slate-900 px-4">
         <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden mb-4">
           <img
@@ -68,13 +72,14 @@ export const HomePage = () => {
         </h2>
 
         {/* Social Links */}
-        <div className="flex space-x-4 sm:space-x-6 mt-6">
+        <div className="flex space-x-4 sm:space-x-6 mt-3">
           <SocialLinks />
         </div>
-        
+
+          <AboutMe />
 
         {/* Projects Section */}
-        <div className="mt-12 w-full max-w-3xl px-4">
+        <div id="projects" className="mt-6 w-full max-w-3xl px-4">
           <h1 className="text-2xl sm:text-3xl font-medium mb-4 text-white text-left">
             Projects
           </h1>
@@ -84,7 +89,7 @@ export const HomePage = () => {
         </div>
       </div>
 
-      <section className="flex flex-col items-center justify-center  bg-slate-900 px-4 pt-4">
+      <section className="flex flex-col items-center justify-center bg-slate-900 px-4 pt-4">
         <GrowingMySkills />
       </section>
     </>
