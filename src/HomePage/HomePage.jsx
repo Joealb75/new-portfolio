@@ -12,6 +12,28 @@ export const HomePage = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
+
+  const [selectedFilter, setSelectedFilter] = useState("All");
+  const [projects, setProjects] = useState([
+    {
+      component: <OptimumHome/>,
+      tags: ["Full Stack", "Python", "Personal"],
+    },
+    {
+      component: <MeritoHome/>,
+      tags: ["Full Stack", "Group Projects", "Python"],
+    },
+  ]);
+
+  const filters = ["All", "Full Stack", "Python", "Personal", "Group Projects"];
+
+  const filteredProjects =
+    selectedFilter === "All"
+      ? projects
+      : projects.filter((project) =>
+          project.tags.includes(selectedFilter)
+        );
+
   const words = [
     "Full Stack Developer",
     "Problem Solver",
@@ -80,10 +102,30 @@ export const HomePage = () => {
           <h1 className="text-2xl sm:text-3xl font-medium text-white text-left">
             Projects
           </h1>
-          <p className="text-xs text-gray-400 pt-2">🚧 Working on adding a filter bar and adding in more projects.</p>
+
+        <div className="flex space-x-4 justify-left mt-2 text-xs ">
+          {filters.map((filter, index) => (
+            <button
+              key={index}
+              onClick={() => setSelectedFilter(filter)}
+              className={`py-1 px-3 rounded-md hover:bg-blue-400 transition duration-500 ease-in-out ${
+                selectedFilter === filter
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-700 text-gray-300"
+              }`}
+            >
+              {filter}
+            </button>
+          ))}
+        </div>
+
           <hr className="border-t border-slate-500 my-4" />
-          <OptimumHome />
-          <MeritoHome />
+
+          <div>
+            {filteredProjects.map((project, index) => (
+              <div key={index}>{project.component}</div>
+            ))}
+          </div>
         </div>
       </div>
 
