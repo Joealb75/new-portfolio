@@ -16,11 +16,11 @@ export const HomePage = () => {
   const [selectedFilter, setSelectedFilter] = useState("All");
   const [projects, setProjects] = useState([
     {
-      component: <OptimumHome/>,
+      component: <OptimumHome tags={["Full Stack", "Python", "Personal"]}/>,
       tags: ["Full Stack", "Python", "Personal"],
     },
     {
-      component: <MeritoHome/>,
+      component: <MeritoHome tags={["Full Stack", "Python", "Group Projects"]}/>,
       tags: ["Full Stack", "Group Projects", "Python"],
     },
   ]);
@@ -103,7 +103,7 @@ export const HomePage = () => {
             Projects
           </h1>
 
-        <div className="flex space-x-4 justify-left mt-2 text-xs ">
+        <div className="flex space-x-4 justify-left mt-3 text-xs ">
           {filters.map((filter, index) => (
             <button
               key={index}
