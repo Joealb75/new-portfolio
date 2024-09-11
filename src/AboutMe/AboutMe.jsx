@@ -1,7 +1,7 @@
 export const AboutMe = () => {
   return (
     <>
-      <div className="w-full md:w-7/12 pl-4 md:pl-5 pt-4" id="about">
+      <div className="w-full max-w-3xl px-4 md:pl-5 pt-4" id="about">
         <h1 className="text-2xl sm:text-3xl font-medium  text-white text-left">
           {" "}
           About Me

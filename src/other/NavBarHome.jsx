@@ -9,6 +9,14 @@ export const NavBarHome = () => {
         </div>
       </Link>
       <div className="text-center">
+      <Link
+          to="about"
+          smooth={true}
+          duration={500}
+          className="text-md font-medium hover:text-blue-400 transition duration-300 pr-3 cursor-pointer"
+        >
+          About Me
+        </Link>
         <Link
           to="projects"
           smooth={true}
@@ -16,14 +24,6 @@ export const NavBarHome = () => {
           className="text-md font-medium hover:text-blue-400 transition duration-300 cursor-pointer"
         >
           Projects
-        </Link>
-        <Link
-          to="about"
-          smooth={true}
-          duration={500}
-          className="text-md font-medium hover:text-blue-400 transition duration-300 pl-3 cursor-pointer"
-        >
-          About Me
         </Link>
         <Link
           to="my-skills"
