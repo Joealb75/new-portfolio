@@ -2,9 +2,9 @@ export const GrowingMySkills = () =>{
 
     return(
       <>
-      <div className="w-full md:w-7/12 pl-4 md:pl-0">
+      <div className="w-full md:w-7/12 pl-4 md:pl-5" id="my-skills">
           <h1 className="text-white text-3xl font-poppins font-semibold mb-4 leading-tight">My Skills</h1>
-          <p className="text-white text-md">
+          <p className="text-gray-400 text-sm">
               The languages, frameworks and tools displayed here represent the core of my current skill set that I am eager to utilize and expand on within a growing organization that values collaboration and continuous learning.   
           </p>
       </div>

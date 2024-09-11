@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { NavBarProjects } from "../other/NavBarProjects.jsx";
 export const OptimumProject = () => {
   const slides = [
     {
@@ -105,6 +105,7 @@ export const OptimumProject = () => {
 
   return (
     <>
+    <NavBarProjects/>
       <div className="flex flex-col items-center min-h-screen bg-slate-900">
 
         <div className="relative w-full sm:w-3/4 lg:w-full h-72 lg:h-full">
