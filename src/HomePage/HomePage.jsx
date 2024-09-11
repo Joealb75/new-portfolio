@@ -18,7 +18,6 @@ export const HomePage = () => {
     "⇓ Connect with me on LinkedIn",
     "Your Next Hire? ;)",
     "Jr. Software Engineer",
-    
   ];
 
   useEffect(() => {
@@ -52,7 +51,7 @@ export const HomePage = () => {
 
   return (
     <>
-    <NavBarHome/>
+      <NavBarHome />
       <div className="flex flex-col items-center justify-center min-h-screen bg-slate-900 px-4">
         <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden mb-4">
           <img
@@ -71,18 +70,17 @@ export const HomePage = () => {
           <span className="border-r-2 border-gray-700 animate-pulse"></span>
         </h2>
 
-        {/* Social Links */}
         <div className="flex space-x-4 sm:space-x-6 mt-3">
           <SocialLinks />
         </div>
 
-          <AboutMe />
+        <AboutMe />
 
-        {/* Projects Section */}
         <div id="projects" className="mt-6 w-full max-w-3xl px-4">
-          <h1 className="text-2xl sm:text-3xl font-medium mb-4 text-white text-left">
+          <h1 className="text-2xl sm:text-3xl font-medium text-white text-left">
             Projects
           </h1>
+          <p className="text-xs text-gray-400 pt-2">🚧 Working on adding a filter bar and adding in more projects.</p>
           <hr className="border-t border-slate-500 my-4" />
           <OptimumHome />
           <MeritoHome />
