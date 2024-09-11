@@ -9,7 +9,7 @@ export const SiteFooter = () => {
             href="https://www.linkedin.com/in/joe--albrecht/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-500 transition duration-300"
+            className="hover:text-blue-500 transition duration-700 ease-in-out"
           >
             <i className="fab fa-linkedin text-2xl"></i>
             <span className="sr-only">LinkedIn</span>
@@ -19,7 +19,7 @@ export const SiteFooter = () => {
             href="https://github.com/Joealb75"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray-400 transition duration-300"
+            className="hover:text-gray-400 transition duration-700 ease-in-out"
           >
             <i className="fab fa-github text-2xl"></i>
             <span className="sr-only">GitHub</span>
@@ -27,7 +27,7 @@ export const SiteFooter = () => {
 
           <a
             href="mailto:joealbrecht75@gmail.com"
-            className="hover:text-green-500 transition duration-300"
+            className="hover:text-green-500 transition duration-700 ease-in-out"
           >
             <i className="fas fa-envelope text-2xl"></i>
             <span className="sr-only">Email</span>
@@ -37,7 +37,7 @@ export const SiteFooter = () => {
             href="https://drive.google.com/file/d/1xdaoFhg3tOihe702BjS8NC0t8z3QTF86/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-green-500 transition duration-300"
+            className="hover:text-green-500 transition duration-700 ease-in-out"
           >
             <i className="fas fa-file-alt text-2xl"></i>
             <span className="sr-only">Resume</span>

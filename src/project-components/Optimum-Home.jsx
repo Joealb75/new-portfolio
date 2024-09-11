@@ -5,7 +5,7 @@ export const OptimumHome = () => {
     <>
       <Link to="/optimum-project">
         <button
-          className="bg-slate-800 text-white font-semibold py-2 px-4 rounded-md mb-4 hover:bg-blue-600 w-full sm:w-auto"
+          className="bg-slate-800 text-white font-semibold py-2 px-4 rounded-md mb-4 border-2 border-blue-600 transition duration-500 ease-in-out hover:bg-blue-600 w-full sm:w-auto"
           href="/optimum-project"
         >
           Optimum Mens Health
