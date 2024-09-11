@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 
-export const OptimumHome = () => {
+export const OptimumHome = ({ tags }) => {
+  const TagButton = ({ tag }) => {
+    return (
+      <span className="inline-block bg-slate-900 border-2 border-gray-400 text-gray-400 text-xs font-medium px-2 py-1 rounded-md mr-2 mb-2 ">
+        {tag}
+      </span>
+    );
+  };
+
   return (
     <>
       <Link to="/optimum-project">
@@ -11,6 +19,12 @@ export const OptimumHome = () => {
           Optimum Mens Health
         </button>
       </Link>
+
+      <div>
+        {tags.map((tag, index) => (
+          <TagButton key={index} tag={tag} />
+        ))}
+      </div>
 
       <p className="text-gray-400 text-sm font-medium">
         Optimum Mens Health is a Full Stack application that I built during a
