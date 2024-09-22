@@ -20,8 +20,10 @@ export const UnderConstructionMerito = () => {
         </p>
 
         <a
-          href="/"
+          href="https://www.merito.dev/"
           className="mt-6 bg-slate-700 text-slate-200 font-semibold py-2 px-6 rounded-full hover:bg-blue-400 transition duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Go Back Home
         </a>

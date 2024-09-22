@@ -31,7 +31,7 @@ export const MeritoHome = ({ tags }) => {
           Building with{" "}
           <a
             className="text-blue-400 hover:text-green-500"
-            href="https://www.linkedin.com/in/dannyhidalgo/"
+            href="https://www.dannyhidalgo.dev/"
             target="_blank"
             rel="noopener noreferrer"
           >
