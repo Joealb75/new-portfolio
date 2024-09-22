@@ -10,10 +10,12 @@ export const MeritoHome = ({ tags }) => {
 
   return (
     <>
-      <Link to="/under-construction">
+      <Link to="https://www.merito.dev/"
+      target="_blank"
+      rel="noopener noreferrer">
         <button
           className="bg-slate-800 text-white font-semibold py-2 px-4 rounded-md mb-4 border-2 border-blue-600 transition duration-500 ease-in-out hover:bg-blue-600 w-full sm:w-auto"
-          href="/under-construction"
+          href="https://www.merito.dev/"
         >
           🚧 Merito 🚧
         </button>
