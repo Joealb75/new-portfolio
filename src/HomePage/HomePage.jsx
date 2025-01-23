@@ -12,15 +12,15 @@ export const HomePage = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-
   const [selectedFilter, setSelectedFilter] = useState("All");
+  const [isProjectsOpen, setIsProjectsOpen] = useState(true);
   const [projects, setProjects] = useState([
     {
-      component: <OptimumHome tags={["Full Stack", "Python", "Personal"]}/>,
+      component: <OptimumHome tags={["Full Stack", "Python", "Personal"]} />,
       tags: ["Full Stack", "Python", "Personal"],
     },
     {
-      component: <MeritoHome tags={["Full Stack", "Python", "Group Projects"]}/>,
+      component: <MeritoHome tags={["Full Stack", "Python", "Group Projects"]} />,
       tags: ["Full Stack", "Group Projects", "Python"],
     },
   ]);
@@ -99,32 +99,52 @@ export const HomePage = () => {
         <AboutMe />
 
         <div id="projects" className="mt-6 w-full max-w-3xl px-4">
-          <h1 className="text-2xl sm:text-3xl font-medium text-white text-left">
-            Projects
-          </h1>
-
-        <div className="flex space-x-4 justify-left mt-3 text-xs ">
-          {filters.map((filter, index) => (
+          <div className="flex justify-between items-center w-full">
+            <h1 className="text-2xl sm:text-3xl font-medium text-white">
+              Projects
+            </h1>
             <button
-              key={index}
-              onClick={() => setSelectedFilter(filter)}
-              className={`py-1 px-3 rounded-md hover:bg-blue-400 transition duration-500 ease-in-out ${
-                selectedFilter === filter
-                  ? "bg-blue-600 text-white"
-                  : "bg-gray-700 text-gray-300"
+              onClick={() => setIsProjectsOpen(!isProjectsOpen)}
+              className={`relative w-12 h-6 flex items-center bg-gray-400 rounded-full p-1 transition-all ${
+                isProjectsOpen ? "bg-green-500" : "bg-gray-600"
               }`}
             >
-              {filter}
+              <div
+                className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-all ${
+                  isProjectsOpen ? "translate-x-6" : "translate-x-0"
+                }`}
+              />
             </button>
-          ))}
-        </div>
+          </div>
 
-          <hr className="border-t border-slate-500 my-4" />
+          <div
+            className={`transition-all duration-500 overflow-hidden ${
+              isProjectsOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+            }`}
+          >
+            <div className="flex space-x-4 justify-left mt-3 text-xs">
+              {filters.map((filter, index) => (
+                <button
+                  key={index}
+                  onClick={() => setSelectedFilter(filter)}
+                  className={`py-1 px-3 rounded-md hover:bg-blue-400 transition duration-500 ease-in-out ${
+                    selectedFilter === filter
+                      ? "bg-blue-600 text-white"
+                      : "bg-gray-700 text-gray-300"
+                  }`}
+                >
+                  {filter}
+                </button>
+              ))}
+            </div>
 
-          <div>
-            {filteredProjects.map((project, index) => (
-              <div key={index}>{project.component}</div>
-            ))}
+            <hr className="border-t border-slate-500 my-4" />
+
+            <div>
+              {filteredProjects.map((project, index) => (
+                <div key={index}>{project.component}</div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
