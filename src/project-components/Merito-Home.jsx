@@ -29,17 +29,6 @@ export const MeritoHome = ({ tags }) => {
 
       <div>
         <p className="text-gray-400 text-sm font-medium">Loading . . .</p>
-        <p className="mt-2 text-gray-400 text-sm font-medium">
-          Building with{" "}
-          <a
-            className="text-blue-400 hover:text-green-500"
-            href="https://www.dannyhidalgo.dev/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Danny Hidalgo :)
-          </a>
-        </p>
       </div>
 
       <div className="flex flex-wrap space-x-2 mt-4 justify-center">
