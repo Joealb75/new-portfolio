@@ -126,7 +126,7 @@ export const OptimumProject = () => {
 
           {/* Image Carousel Section */}
           <div className="bg-slate-800 rounded-2xl shadow-2xl p-4 sm:p-6 lg:p-8 mb-8">
-            <div className="relative w-full aspect-video mb-6 rounded-xl overflow-hidden shadow-lg bg-slate-700">
+            <div className="relative w-full rounded-xl overflow-hidden shadow-lg" style={{ height: '70vh', minHeight: '500px', maxHeight: '800px' }}>
               <img
                 src={slides[currentSlideIndex].image}
                 alt={`Slide ${currentSlideIndex + 1}`}
