@@ -20,7 +20,7 @@ export const HomePage = () => {
     },
   ]);
 
-  const filters = ["All", "Full Stack", "Python", "Personal", "Group Projects"];
+  const filters = ["All", "Full Stack", "Python", "Personal"];
 
   const filteredProjects =
     selectedFilter === "All"
@@ -69,83 +69,160 @@ export const HomePage = () => {
   return (
     <>
       <NavBarHome />
-      <div className="flex flex-col items-center justify-center min-h-screen bg-slate-900 px-4">
-        <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden mb-4">
-          <img
-            src="./assets/homeLogos/profileImage.jpeg"
-            alt="Profile"
-            className="w-full h-full object-cover"
-          />
-        </div>
-
-        <h1 className="text-3xl sm:text-4xl font-bold mb-2 text-white">
-          Joe Albrecht
-        </h1>
-
-        <h2 className="text-xl sm:text-2xl text-white h-10">
-          {text}
-          <span className="border-r-2 border-gray-700 animate-pulse"></span>
-        </h2>
-
-        <div className="flex space-x-4 sm:space-x-6 mt-3">
-          <SocialLinks />
-        </div>
-
-        <AboutMe />
-
-        <div id="projects" className="mt-6 w-full max-w-3xl px-4">
-          <div className="flex justify-between items-center w-full">
-            <h1 className="text-2xl sm:text-3xl font-medium text-white">
-              Projects
-            </h1>
-            <button
-              onClick={() => setIsProjectsOpen(!isProjectsOpen)}
-              className={`relative w-12 h-6 flex items-center bg-gray-400 rounded-full p-1 transition-all ${
-                isProjectsOpen ? "bg-green-500" : "bg-gray-600"
-              }`}
-            >
-              <div
-                className={`w-5 h-5 bg-white rounded-full shadow-md transform transition-all ${
-                  isProjectsOpen ? "translate-x-6" : "translate-x-0"
-                }`}
+      
+      {/* Hero Section */}
+      <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900 overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23334155" fill-opacity="0.1"%3E%3Ccircle cx="30" cy="30" r="1"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+        
+        <div className="relative flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+          {/* Profile Image with Animated Border */}
+          <div className="relative mb-8">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 p-1 animate-pulse">
+              <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-full bg-slate-900"></div>
+            </div>
+            <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden p-1 bg-gradient-to-r from-blue-500 to-cyan-500">
+              <img
+                src="./assets/homeLogos/profileImage.jpeg"
+                alt="Joe Albrecht - Full Stack Developer"
+                className="w-full h-full object-cover rounded-full bg-slate-800"
               />
-            </button>
+            </div>
           </div>
 
-          <div
-            className={`transition-all duration-500 overflow-hidden ${
-              isProjectsOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
-            }`}
-          >
-            <div className="flex space-x-4 justify-left mt-3 text-xs">
-              {filters.map((filter, index) => (
-                <button
-                  key={index}
-                  onClick={() => setSelectedFilter(filter)}
-                  className={`py-1 px-3 rounded-md hover:bg-blue-400 transition duration-500 ease-in-out ${
-                    selectedFilter === filter
-                      ? "bg-blue-600 text-white"
-                      : "bg-gray-700 text-gray-300"
-                  }`}
-                >
-                  {filter}
-                </button>
-              ))}
+          {/* Name and Title */}
+          <div className="text-center mb-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent">
+              Joe Albrecht
+            </h1>
+            
+            <div className="h-12 sm:h-16 flex items-center justify-center">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl text-gray-300 font-medium">
+                {text}
+                <span className="border-r-2 border-blue-400 animate-pulse ml-1"></span>
+              </h2>
             </div>
+          </div>
 
-            <hr className="border-t border-slate-500 my-4" />
+          {/* Social Links */}
+          <div className="flex space-x-6 sm:space-x-8 mb-12">
+            <SocialLinks />
+          </div>
 
-            <div>
-              {filteredProjects.map((project, index) => (
-                <div key={index}>{project.component}</div>
-              ))}
+          {/* About Me Section */}
+          <div className="w-full max-w-4xl mb-12">
+            <AboutMe />
+          </div>
+
+          {/* Scroll Indicator */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
+              <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
             </div>
           </div>
         </div>
       </div>
 
-      <section className="flex flex-col items-center justify-center bg-slate-900 px-4 pt-4">
-        <GrowingMySkills />
+      {/* Projects Section */}
+      <section className="bg-gradient-to-b from-gray-900 to-slate-900 py-16 sm:py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+              Featured Projects
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto">
+              Explore my latest work and creative solutions
+            </p>
+          </div>
+
+          {/* Projects Container */}
+          <div id="projects" className="bg-slate-800/50 backdrop-blur-sm rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-10 border border-slate-700/50">
+            
+            {/* Projects Header with Toggle */}
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-8 gap-4">
+              <h3 className="text-2xl sm:text-3xl font-semibold text-white flex items-center">
+                <span className="w-2 h-8 bg-gradient-to-b from-blue-500 to-cyan-500 mr-3 rounded-full"></span>
+                My Work
+              </h3>
+              
+              <div className="flex items-center gap-3">
+                <span className="text-sm font-medium text-gray-400">
+                  {isProjectsOpen ? 'Hide' : 'Show'} Projects
+                </span>
+                <button
+                  onClick={() => setIsProjectsOpen(!isProjectsOpen)}
+                  className={`relative w-14 h-7 flex items-center rounded-full p-1 transition-all duration-300 ${
+                    isProjectsOpen 
+                      ? "bg-gradient-to-r from-green-500 to-emerald-500 shadow-lg shadow-green-500/20" 
+                      : "bg-gray-600 hover:bg-gray-500"
+                  }`}
+                >
+                  <div
+                    className={`w-5 h-5 bg-white rounded-full shadow-lg transform transition-all duration-300 ${
+                      isProjectsOpen ? "translate-x-7" : "translate-x-0"
+                    }`}
+                  />
+                </button>
+              </div>
+            </div>
+
+            {/* Projects Content */}
+            <div
+              className={`transition-all duration-700 overflow-hidden ${
+                isProjectsOpen ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
+              }`}
+            >
+              {/* Filter Buttons */}
+              <div className="mb-8">
+                <p className="text-sm font-medium text-gray-400 mb-4">Filter by technology:</p>
+                <div className="flex flex-wrap gap-3">
+                  {filters.map((filter, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setSelectedFilter(filter)}
+                      className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                        selectedFilter === filter
+                          ? "bg-gradient-to-r from-blue-600 to-cyan-600 text-white shadow-lg shadow-blue-500/20 scale-105"
+                          : "bg-slate-700/50 text-gray-300 hover:bg-slate-600/50 hover:text-white border border-slate-600"
+                      }`}
+                    >
+                      {filter}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Projects Grid */}
+              <div className="space-y-6">
+                {filteredProjects.map((project, index) => (
+                  <div 
+                    key={index} 
+                    className="bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 border border-slate-700/50 hover:border-blue-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10"
+                  >
+                    {project.component}
+                  </div>
+                ))}
+              </div>
+
+              {/* Empty State */}
+              {filteredProjects.length === 0 && (
+                <div className="text-center py-12">
+                  <div className="text-4xl mb-4">🔍</div>
+                  <p className="text-gray-400">No projects found for this filter.</p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section className="bg-gradient-to-b from-slate-900 to-gray-900 py-16 sm:py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <GrowingMySkills />
+        </div>
       </section>
     </>
   );

@@ -126,23 +126,23 @@ export const OptimumProject = () => {
 
           {/* Image Carousel Section */}
           <div className="bg-slate-800 rounded-2xl shadow-2xl p-4 sm:p-6 lg:p-8 mb-8">
-            <div className="relative w-full aspect-video mb-6 rounded-xl overflow-hidden shadow-lg">
+            <div className="relative w-full aspect-video mb-6 rounded-xl overflow-hidden shadow-lg bg-slate-700">
               <img
                 src={slides[currentSlideIndex].image}
                 alt={`Slide ${currentSlideIndex + 1}`}
-                className="w-full h-full object-contain bg-slate-700"
+                className="w-full h-full object-cover"
               />
               
               {/* Navigation Buttons */}
               <button
-                className="absolute top-1/2 transform -translate-y-1/2 left-2 sm:left-4 text-white text-2xl sm:text-3xl font-bold bg-black/50 hover:bg-blue-600 px-3 sm:px-4 py-2 sm:py-3 rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-110"
+                className="absolute top-1/2 left-4 transform -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 text-white text-xl sm:text-2xl font-bold bg-black/60 hover:bg-blue-600/90 rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-110 border border-white/20"
                 onClick={prevSlide}
                 aria-label="Previous slide"
               >
                 &#8249;
               </button>
               <button
-                className="absolute top-1/2 transform -translate-y-1/2 right-2 sm:right-4 text-white text-2xl sm:text-3xl font-bold bg-black/50 hover:bg-blue-600 px-3 sm:px-4 py-2 sm:py-3 rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-110"
+                className="absolute top-1/2 right-4 transform -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 text-white text-xl sm:text-2xl font-bold bg-black/60 hover:bg-blue-600/90 rounded-full backdrop-blur-sm transition-all duration-300 hover:scale-110 border border-white/20"
                 onClick={nextSlide}
                 aria-label="Next slide"
               >
@@ -244,11 +244,6 @@ export const OptimumProject = () => {
                     </li>
                   </ul>
                 </div>
-
-                <p>
-                  I am currently working with Scott and his wife to create a different
-                  website that matches their vision.
-                </p>
 
                 <p>
                   Thank you for checking out my project! There is a 6-minute video
