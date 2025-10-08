@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { GrowingMySkills } from "./GrowingMySkills.jsx";
 import { SocialLinks } from "./SocialLinks.jsx";
 import { OptimumHome } from "../project-components/Optimum-Home.jsx";
-import { MeritoHome } from "../project-components/Merito-Home.jsx";
 import { AboutMe } from "../AboutMe/AboutMe.jsx";
 import { NavBarHome } from "../other/NavBarHome.jsx";
 
@@ -18,10 +17,6 @@ export const HomePage = () => {
     {
       component: <OptimumHome tags={["Full Stack", "Python", "Personal"]} />,
       tags: ["Full Stack", "Python", "Personal"],
-    },
-    {
-      component: <MeritoHome tags={["Full Stack", "Python", "Group Projects"]} />,
-      tags: ["Full Stack", "Group Projects", "Python"],
     },
   ]);
 
