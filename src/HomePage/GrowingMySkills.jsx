@@ -28,10 +28,10 @@ export const GrowingMySkills = () => {
           {skill.name.charAt(0)}
         </div>
       )}
-      <h3 className="text-white text-xs sm:text-sm font-medium text-center mb-1 group-hover:text-blue-300 transition-colors">
+      <h3 className="text-white text-xs sm:text-sm font-medium text-center mb-1 transition-colors duration-300">
         {skill.name}
       </h3>
-      <span className="text-gray-400 text-xs px-2 py-1 bg-slate-700/50 rounded-full">
+      <span className="text-gray-400 text-xs px-2 py-1 bg-slate-700/50 rounded-full transition-colors duration-300">
         {skill.category}
       </span>
     </div>

@@ -115,7 +115,7 @@ export const HomePage = () => {
           </div>
 
           {/* About Me Section */}
-          <div className="w-full max-w-4xl mb-12">
+          <div className="w-full max-w-6xl mb-12">
             <AboutMe />
           </div>
 
