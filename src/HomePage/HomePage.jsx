@@ -71,7 +71,7 @@ export const HomePage = () => {
       <NavBarHome />
       
       {/* Hero Section */}
-      <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900 overflow-hidden">
+      <div className="relative min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900 overflow-hidden pt-16">
         {/* Subtle Background Dots */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
