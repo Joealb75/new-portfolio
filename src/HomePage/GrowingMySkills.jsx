@@ -16,22 +16,22 @@ export const GrowingMySkills = () => {
   ];
 
   const SkillCard = ({ skill }) => (
-    <div className="group flex flex-col items-center p-4 bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-700/50 hover:border-blue-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10 hover:scale-105 min-w-[120px]">
+    <div className="flex flex-col items-center p-4 bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-700/50 hover:border-blue-500/30 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-blue-500/10 hover:scale-105 min-w-[120px]">
       {skill.icon ? (
         <img 
           src={skill.icon} 
           alt={skill.name} 
-          className="w-12 h-12 sm:w-16 sm:h-16 mb-3 group-hover:scale-110 transition-transform duration-300" 
+          className="w-12 h-12 sm:w-16 sm:h-16 mb-3 transition-transform duration-300 ease-in-out hover:scale-110" 
         />
       ) : (
-        <div className={`w-12 h-12 sm:w-16 sm:h-16 mb-3 rounded-lg ${skill.color} flex items-center justify-center text-white font-bold text-lg group-hover:scale-110 transition-transform duration-300`}>
+        <div className={`w-12 h-12 sm:w-16 sm:h-16 mb-3 rounded-lg ${skill.color} flex items-center justify-center text-white font-bold text-lg transition-transform duration-300 ease-in-out hover:scale-110`}>
           {skill.name.charAt(0)}
         </div>
       )}
-      <h3 className="text-white text-xs sm:text-sm font-medium text-center mb-1 transition-colors duration-300">
+      <h3 className="text-white text-xs sm:text-sm font-medium text-center mb-1">
         {skill.name}
       </h3>
-      <span className="text-gray-400 text-xs px-2 py-1 bg-slate-700/50 rounded-full transition-colors duration-300">
+      <span className="text-gray-400 text-xs px-2 py-1 bg-slate-700/50 rounded-full">
         {skill.category}
       </span>
     </div>
@@ -50,7 +50,7 @@ export const GrowingMySkills = () => {
 
       {/* Skills Grid */}
       <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl border border-slate-700/50 p-6 sm:p-8 shadow-xl mb-12">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 sm:gap-6 justify-items-center">
           {skills.map((skill, index) => (
             <SkillCard key={index} skill={skill} />
           ))}

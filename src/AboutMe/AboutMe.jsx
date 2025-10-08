@@ -4,7 +4,7 @@ export const AboutMe = () => {
   const [isAboutOpen, setIsAboutOpen] = useState(true);
 
   return (
-    <div className="w-full max-w-4xl" id="about">
+    <div className="w-full" id="about">
       <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl border border-slate-700/50 p-6 sm:p-8 shadow-xl">
         
         {/* Header */}

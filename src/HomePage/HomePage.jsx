@@ -115,8 +115,10 @@ export const HomePage = () => {
           </div>
 
           {/* About Me Section */}
-          <div className="w-full max-w-6xl mb-12">
-            <AboutMe />
+          <div className="flex justify-center w-full mb-12">
+            <div className="w-full max-w-5xl">
+              <AboutMe />
+            </div>
           </div>
 
           {/* Scroll Indicator */}
@@ -130,7 +132,7 @@ export const HomePage = () => {
 
       {/* Projects Section */}
       <section className="bg-gradient-to-b from-gray-900 to-slate-900 py-16 sm:py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Section Header */}
           <div className="text-center mb-12">
@@ -143,7 +145,8 @@ export const HomePage = () => {
           </div>
 
           {/* Projects Container */}
-          <div id="projects" className="bg-slate-800/50 backdrop-blur-sm rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-10 border border-slate-700/50">
+          <div className="flex justify-center">
+            <div id="projects" className="w-full max-w-5xl bg-slate-800/50 backdrop-blur-sm rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-10 border border-slate-700/50">
             
             {/* Projects Header with Toggle */}
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-8 gap-4">
@@ -219,14 +222,19 @@ export const HomePage = () => {
                 </div>
               )}
             </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Skills Section */}
       <section className="bg-gradient-to-b from-slate-900 to-gray-900 py-16 sm:py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <GrowingMySkills />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center">
+            <div className="w-full max-w-5xl">
+              <GrowingMySkills />
+            </div>
+          </div>
         </div>
       </section>
     </>
